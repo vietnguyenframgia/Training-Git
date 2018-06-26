@@ -45,7 +45,7 @@ int main(int argc, char const *argv[])
     if (bind(server_fd, (struct sockaddr *)&address,
                                  sizeof(address))<0)
     {
-        perror("bind failed");
+        perror("bind failed+21");
         exit(EXIT_FAILURE);
     }
     if (listen(server_fd, 3) < 0)
