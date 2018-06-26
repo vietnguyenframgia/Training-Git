@@ -34,7 +34,7 @@ int main(int argc, char const *argv[])
     if (setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR | SO_REUSEPORT,
                                                   &opt, sizeof(opt)))
     {
-        perror("setsockopt");
+        perror("setsockopt+1");
         exit(EXIT_FAILURE);
     }
     address.sin_family = AF_INET;
